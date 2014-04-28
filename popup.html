@@ -1,17 +1,25 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-    </style>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-        <div class="feature feature--bookmark">
-            <h2 class="feature__title">书签</h2>
-            <div class="feature__content">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
+    <link href='popup.css' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-            </div>
+    <title>Getting Started Extension's Popup</title>
+</head>
+<body class="fa">
+    <div class="feature feature--bookmark">
+        <h2 class="feature__title J-show-bookmark"><i class="fa-heart"></i>书签<span class="fa-plus add-bookmark J-add-bookmark"></span></h2>
+        <div class="feature__content bookmark-list J-bookmark-list" style="display:none;">
         </div>
-  </body>
+    </div>
+    <div class="feature feature--lightoff">
+        <h2 class="feature__title J-light-off"><i class="fa-lightbulb-o"></i>开关灯</h2>
+        <div class="feature__content">
+        </div>
+    </div>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="popup.js"></script>
+</body>
 </html>

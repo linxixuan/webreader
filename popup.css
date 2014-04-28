@@ -1,0 +1,94 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+body {
+    min-height:100px;
+    width:150px;
+    background:#303030;
+    font-family:'宋体';
+    font-size:12px;
+}
+* {
+    margin:0;
+    padding:0;
+}
+ol,ul {
+    list-style:none;
+}
+.cf {
+    zoom:1;
+}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+/* accoring样式*/
+.feature__title {
+    padding:0 10px;
+    line-height:34px;
+    font-size:14px;
+    cursor:pointer;
+    color:#FF9917;
+}
+.feature__title:hover {
+    color:#FFF;
+    background:#3980c6;
+}
+.feature__title i {
+    font-style:normal;
+    margin-right:10px;
+}
+.feature__content {
+    color:#00C359;
+}
+.op {
+    display:block;
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 34px;
+	cursor: pointer;
+    text-align:center;
+	background: linear-gradient(#003040, #002535);
+}
+.add-bookmark {
+    float:right;
+    -webkit-transition:all .3s ease;
+}
+.add-bookmark:hover {
+    text-shadow:0 0 10px #999;
+    -webkit-transform:rotate(90deg);
+}
+.bookmark {
+    position:relative;
+    line-height:20px;
+    text-align:center;
+    cursor:pointer;
+    overflow:hidden;
+    transition:all .3s ease;
+}
+.bookmark:hover {
+    background:#444;
+}
+.delete-bookmark {
+    position:absolute;
+    top:0;
+    right:5px;
+    font-size:0;
+    -webkit-transition:all .3s ease;
+}
+.bookmark:hover .delete-bookmark {
+    font-size:12px;
+}
+.delete-bookmark:hover {
+    color:#FF9917;
+}
+.bookmark .index {
+    float:left;
+    margin-left:20px;
+}
+.bookmark .cor {
+    float:right;
+    margin-right:20px;
+}

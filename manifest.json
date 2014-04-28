@@ -1,12 +1,24 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
 
-  "name": "web reader",
-  "description": "This tool help you read web more comfortable, more easier to share.",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
+    "name": "web reader",
+    "description": "This tool help you read web more comfortable, more easier to share.",
+    "version": "1.0",
+    "permissions": [
+        "tabs", "downloads", "http://*/*", "https://*/*"
+    ],
+    "background": {
+        "scripts": ["jquery-1.7.1.min.js", "background.js"]
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "book-19.png",
+            "38": "book-19.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["jquery-1.7.1.min.js", "html2canvas.js", "content_script.js"]
+    }]
 }
